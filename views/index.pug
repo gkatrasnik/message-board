@@ -2,8 +2,12 @@ extends layout
 
 block content
   h1= title
+  a(href="/new") Add new message
   each message in messages 
     div
-      p #{message.user}, #{message.added}
-      p #{message.text}
+      p 
+      strong #{message.user}
+      | , #{message.added}
+      p - #{message.text}
+    br
 

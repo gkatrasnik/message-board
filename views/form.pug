@@ -2,13 +2,14 @@ extends layout
 
 block content
   h1= title
-  
+  a(href="/") Home 
+
   form(method="POST" action="/new")
     label
     |  Author:
-    input(type="text", name="author")    
+    input(type="text", name="messageAuthor")    
     |  Text: 
-    input(type="text", name="text")    
+    input(type="text", name="messageText")    
     input(type="submit", value="Submit")
 
 
